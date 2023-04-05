@@ -3,3 +3,6 @@ Flask-Login==0.6.1
 Flask-SQLAlchemy==2.5.1
 weasyprint==55.0
 Flask-WeasyPrint==0.6
+werkzeug==2.1.2
+SQLAlchemy==1.4.0
+lxml==4.9.2
