@@ -1,9 +1,10 @@
 *.pyc
 tags
 .idea
-sql.db
 /#ttSchweizer.py#
 /#unittests.py#
 Data
 /TAGS
 .DS_Store
+.venv
+**/sql.db

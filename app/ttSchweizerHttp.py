@@ -38,7 +38,7 @@ ttSchweizer.message = message
 
 app = Flask(__name__)
 app.secret_key = "F1r4o6doM%imi!/Baum"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////Users/volker/data/sql.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data/sql.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 
@@ -54,7 +54,7 @@ if __name__ == "ttSchweizerHttp":
     # logger
     os.chdir("ttSchweizerData")
     STARTcURRENTwORKINGdIR = os.getcwd()
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////Users/volker/data/sql.db"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data/sql.db"
 
 if __name__ == "flask_app":
     # pythonanywhere
@@ -66,7 +66,7 @@ db = SQLAlchemy(app)
 
 
 def getUserDirector():
-    return os.path.join(STARTcURRENTwORKINGdIR, current_user.username)
+    return os.path.join(STARTcURRENTwORKINGdIR, "data", current_user.username)
 
 
 def changeToUserDirectory():
