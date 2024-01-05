@@ -66,7 +66,7 @@ db = SQLAlchemy(app)
 
 
 def getUserDirector():
-    return os.path.join(STARTcURRENTwORKINGdIR, "data", current_user.username)
+    return os.path.join(STARTcURRENTwORKINGdIR, current_user.username)
 
 
 def changeToUserDirectory():
