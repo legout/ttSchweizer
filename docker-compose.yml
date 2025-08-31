@@ -2,11 +2,8 @@ version: "3.8"
 
 services:
   app:
-    #image: myimage # Image name built from Dockerfile
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: ttschweizer
+    image: ghcr.io/legout/legout/ttschweizer
+    container_name: ttschweizer
     ports:
       - 5001:5001
     volumes:
