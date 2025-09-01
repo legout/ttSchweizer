@@ -8,6 +8,10 @@ services:
       - 5001:5001
     volumes:
       - data:/app/data
+  deploy:
+    placement:
+      constraints:
+        - node.hostname == v2000g11-1.lignobox
 
 volumes:
   data:
